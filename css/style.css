@@ -153,9 +153,6 @@ a{
 	transition: all .3s;
 	/* letter-spacing: -2px; */
 }
-
-
-
 .header__inner-btn button:hover{
 	transform: scale(1.03);
 	background: rgb(231,86,71);
