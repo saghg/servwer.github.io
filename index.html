@@ -21,20 +21,18 @@
 
 	<!-- Change log soon -->
 	<!-- 
-		/*фиксануть градиент кнопки*/
 		/*фиксануть кнопку works в хедере*/
-		/* доделать popup окно для кнопки в хедере и для работ*/
+		/* доделать popup окно для кнопки для работ*/
 	-->
 
-	<header class="header">
+	<header id="head" class="header">
 		<div class="container">
 			<div class="header__wrapper">
 				<div class="header__logo"><a href="#"><img src="images/logo-min.svg" alt="logo"></a></div>
 				<nav class="nav">
 					<a class="nav__link" href="#">About</a>
-					<a class="nav__link" href="#">Works</a>
-					<a class="nav__link" href="#">Contacts</a>
-
+					<a class="nav__link" href="#works">Works</a>
+					<a class="nav__link" href="#conct">Contacts</a>
 				</nav>
 			</div>
 		</div>
@@ -107,9 +105,9 @@
 							<label class="label">E-mail</label>
 						</div>
 						<div class="input">
-							<textarea name="message" placeholder="" class="message__input inputs" cols="30" rows="2"
+							<textarea style="resize: none;" name="message" placeholder="" class="message__input inputs" cols="50" rows="2"
 								required></textarea>
-							<label class="label">Message</label>
+							<label class="label message__label">Message</label>
 						</div>
 						<input type='submit' value='Send Message' class="button__form" />
 					</form>
@@ -148,9 +146,20 @@
 				</div>
 			</div>
 		</div>
+		<!-- <div class="arrow__up">
+			<a href="#head"><i class="fa fa-chevron-up fa-3x" aria-hidden="true"></i></a>		
+		</div> -->
 	</section>
 
-	<section class="contacts">
+	<div class="works__modal">
+		<div class="container">
+			<div class="works__modal-wrapper">
+
+			</div>
+		</div>
+	</div>
+
+	<section id="conct" class="contacts">
 		<div class="container">
 			<div class="contacts__wrapper">
 				<div class="contact__logo"><a href="#"><img src="images/logo-min.svg" alt=""></a></div>
@@ -167,7 +176,7 @@
 			</div>
 		</div>
 	</section>
-
+	<p style="margin-left: 0px;" id="back-top"><a href="#head"><span></span>UP</a></p>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>

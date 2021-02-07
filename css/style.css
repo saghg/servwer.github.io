@@ -302,6 +302,10 @@ a{
 .input{
 	position: relative;
 }
+.message__label{
+	position: absolute;
+	top: -20% !important;
+}
 #input__form .input{
 	margin-bottom: 50px;
 	padding: 0 100px;
@@ -311,6 +315,7 @@ a{
 	top: -50%;
 	left: 18%;
 }
+
 #input__form .input .label::after{
 	content: '*';
 }
@@ -337,7 +342,9 @@ a{
     color: silver;
     transition: border-color .25s;
 		outline: none;
+		height: 100px;
 }
+
 /* #input__form{
 	text-align: center;
 	padding: 100px 100px;
@@ -369,6 +376,7 @@ a{
 .works{
 	padding: 50px 0;
 	background-color: #f3f3f3;
+	position: relative;
 }
 .works__wrapper{
 	text-align: center;
@@ -376,8 +384,18 @@ a{
 .works__item{
 	position: relative;
 }
-
-
+.arrow__up{
+	position: absolute;
+	right: 5%;
+	/* top: 100%; */
+	bottom: -10%;
+}
+.arrow__up a{
+	border:none;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+}
 .works__item:hover::after{
 	content: '';
 	position: absolute;
@@ -471,3 +489,35 @@ a{
 	.contact__socials li+li{
 		margin-left: 40px;	
 	}
+
+	#back-top {
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+}
+#back-top a{
+	width:55px;
+	display:block;
+	text-align:center;
+	font:11px/100% Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	text-decoration:none;
+	background-color: transparent;
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	transition:1s;
+}
+
+/* графическая стрелка */
+#back-top span{
+	width:55px;
+	height:1600px;
+	display:block;
+	margin-bottom:7px;
+    background: url('../img/up-arrow.png') no-repeat bottom center;
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	transition:1s;
+}
+
+#back-top a:hover span{background-color: rgba(0, 0, 0, 0.3);}
